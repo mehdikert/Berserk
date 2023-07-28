@@ -1,0 +1,90 @@
+.header-univers {
+    background: url(image/NAV3.jpg) no-repeat;
+    background-attachment: fixed;
+}
+
+
+.personnage img {
+    width: 300px;
+}
+
+.personnage {
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.berserker p {
+    text-align: justify;
+}
+
+.personnage h1 {
+    font-family: 'berserk';
+    letter-spacing: 1px;
+}
+
+@media screen and (max-width : 355px) {
+    .personnage img {
+        width: 200px;
+    }
+}
+
+.section-personnage {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 50px 0px;
+}
+
+.section-personnage>p {
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
+@media screen and (max-width : 664px) {
+    .section-personnage>p {
+        font-size: 1.2rem;
+    }
+
+    .personnage h1 {
+        font-size: 1.2rem;
+    }
+}
+
+
+.section-manga {
+    display: flex;
+    gap: 50px;
+    padding: 50px 0px;
+    align-items: center;
+}
+
+.section-manga p {
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+@media screen and (max-width : 615px) {
+    .section-manga img {
+        width: 70vw;
+    }
+
+}
+
+@media screen and (max-width : 576px) {
+    .section-manga {
+        flex-direction: column;
+    }
+
+    .header-univers {
+        background-position-x: -50vw;
+    }
+}
+
+@media screen and (max-width : 380px) {
+    .header-univers {
+        background-position-x: -100vw;
+    }
+}

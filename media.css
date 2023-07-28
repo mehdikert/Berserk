@@ -1,0 +1,85 @@
+.img {
+    width: 100%;
+    height: 35vw;
+    background-size: cover;
+}
+
+.navigator-picture {
+    display: flex;
+    width: max-content;
+    background-color: rgba(255, 255, 255, 0.201);
+    gap: 50px;
+    padding: 10px 25px;
+    border-radius: 5px;
+
+}
+
+.navigator-picture img {
+    background-color: azure;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.navigator-picture img:hover {
+    transition-duration: 1s;
+}
+
+.navigator-picture img:nth-child(1):hover {
+    transform: translatey(-10px) rotateX(20deg) rotatey(40deg);
+    box-shadow: 10px 5px 5px rgb(0, 0, 0);
+}
+
+.navigator-picture img:nth-child(2):hover {
+    transform: translatey(-10px) rotateX(-20deg) rotatey(40deg);
+    box-shadow: -10px 5px 5px rgb(0, 0, 0);
+}
+
+.navigator-picture:hover {
+    box-shadow: 0px 10px 10px rgb(85, 0, 0);
+    transform: rotatex(35deg) rotateY(0deg) rotateZ(0deg);
+    transition-duration: 1s;
+}
+
+.section-anime {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+
+
+
+.section-picture {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 15px 0px;
+}
+
+@media screen and (max-width : 590px) {
+    .navigator-picture img {
+        width: 25px;
+    }
+
+    .navigator-picture {
+        gap: 25px;
+    }
+
+    iframe {
+        width: 80%;
+        height: 50%;
+    }
+}
+
+
+.section-anime,
+.section-picture {
+    padding: 50px 0px;
+}
+
+.episode {
+    padding: 10px 0px;
+    border-radius: 5px;
+    font-weight: 600;
+}

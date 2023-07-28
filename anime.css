@@ -1,0 +1,169 @@
+.header-anime {
+    background: url(image/NAV6.jpg) no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.navbar-toggler-anime {
+    margin: 10px 0px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: rgb(36, 36, 36);
+}
+
+.tv-detail img {
+    width: 400px;
+}
+
+@media screen and (max-width : 1000px) {
+    .header-anime {
+        background-position-x: 60%;
+    }
+}
+
+section ul {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.list-item {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.list-item>h1 {
+    text-align: center;
+    background-color: brown;
+    padding: 25px 50px;
+}
+
+.tv-detail p {
+    text-align: justify;
+}
+
+@media screen and (min-width: 768px) and (max-width : 990px) {
+    .tv-detail img {
+        width: 50%;
+    }
+
+    .tv-detail p {
+        font-size: 1.4rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .tv-detail p {
+        font-size: 1.2rem;
+        width: 100%;
+    }
+}
+
+.section-film {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.section-film img {
+    width: 350px;
+    height: 450px;
+}
+
+@media screen and (max-width : 1215px) and (min-width : 992px) {
+    .section-film img {
+        width: 300px;
+        height: 350px;
+    }
+
+    .section-film h1 {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width : 991px) and (min-width : 536px) {
+    .section-film img {
+        width: 500px;
+        height: 650px;
+    }
+
+    .section-game img {
+        width: 350px;
+    }
+}
+
+@media screen and (max-width : 535px) {
+    .section-film img {
+        width: 200px;
+        height: 250px;
+    }
+
+    .section-film h1 {
+        font-size: 0.8rem;
+    }
+
+    .section-film {
+        gap: 25px;
+    }
+
+    .section-film p {
+        font-size: 1rem;
+        line-height: 25px;
+    }
+
+    .section-game img {
+        width: 50vw;
+    }
+}
+
+@media screen and (min-width : 600px) {
+    .section-film p {
+        font-size: 1.3rem;
+        line-height: 40px;
+    }
+}
+
+.section-film p {
+    text-align: justify;
+    ;
+}
+
+
+.section-film h1 {
+    text-align: center;
+}
+
+.section-film div {
+    flex-wrap: nowrap;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+
+
+
+.section-game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.section-game p {
+    text-align: justify;
+}
+
+@media screen and (min-width : 991px) {
+    .section-game img {
+        width: 50vw;
+    }
+}
+
+.section-film,
+.section-game,
+.section-tele {
+    padding: 50px 0px;
+}

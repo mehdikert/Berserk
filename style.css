@@ -1,0 +1,193 @@
+.bg-gradient {
+    background-color: #ce8080;
+}
+
+@font-face {
+    font-family: berserk;
+    src: url(font/Berserker-Regular.ttf);
+}
+
+body {
+    background-color: black;
+    color: white;
+    scroll-behavior: smooth;
+}
+
+header {
+    background: url(image/NAV2.jpg) no-repeat center;
+    background-size: cover;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+
+
+.d-flex {
+    margin: 10px 0px;
+}
+
+.nav-link {
+    background-color: rgba(0, 0, 0, 0.631);
+}
+
+.navbar-toggler {
+    margin: 10px 0px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: rgb(36, 36, 36);
+}
+
+.title {
+    text-align: center;
+    padding: 10px 0px;
+}
+
+.title,
+.subtitle {
+
+    font-family: 'berserk';
+    font-size: 3.5rem;
+}
+
+.history {
+    text-align: justify;
+    font-size: 1.5rem;
+}
+
+@media screen and (max-width : 600px) {
+    .history {
+        font-size: 1.2rem;
+    }
+}
+
+.section-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 50px 0px;
+}
+
+/*              UNIVERS.HTML                   */
+.section-artefact .row {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.beherit {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 80px;
+}
+
+.beherit img {
+    border: solid 1px rgb(20, 20, 20);
+    height: max-content;
+    border-radius: 20px;
+}
+
+.beherit p {
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+@media screen and (min-width : 750px) {
+    .beherit img:hover {
+        transform: rotateX(25deg) rotateY(15deg) rotateZ(-10deg);
+        transition-duration: 0.25s;
+        box-shadow: -20px 20px 20px #760a0a;
+    }
+}
+
+@media screen and (max-width : 445px) {
+    .beherit img {
+        width: 100%;
+    }
+
+    .beherit {
+        flex-direction: column;
+    }
+
+    .title {
+        font-size: 1.2rem;
+    }
+
+    .subtitle {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width : 575px)and (min-width:445px) {
+    .beherit img {
+        width: 100%;
+    }
+
+
+    .title,
+    .subtitle {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width : 980px) {
+
+    .beherit,
+    .berserker {
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width : 575px)and (max-width:675px) {
+
+    .title,
+    .subtitle {
+        font-size: 2.5rem;
+    }
+}
+
+.img-berserker {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 0px;
+}
+
+.berserker img {
+    border-radius: 10px;
+}
+
+@media screen and (min-width : 775px) {
+    .berserker img:hover {
+        transform: scale(1.1);
+        transition-duration: 0.25s;
+        box-shadow: 0px 0px 40px #760a0a;
+    }
+}
+
+@media screen and (max-width : 768px) {
+    .berserker img:nth-child(1) {
+        display: none;
+    }
+}
+
+@media screen and (min-width : 981px) {
+    .berserker p {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width : 800px) and (min-width : 555px) {
+    .header-univers {
+        background-position-x: -300px;
+    }
+}
+
+@media screen and (max-width : 555px) {
+    .header-univers {
+        background-position-x: -350px;
+    }
+}
+
+.section-artefact .row {
+    margin: 50px 0px;
+}
